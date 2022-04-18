@@ -1,8 +1,9 @@
+let _continue: boolean;
 servos.P2.setAngle(90)
-let _continue = false
-while (_continue == false) {
+let continu = false
+while (continu == false) {
     basic.showLeds(`
-        # . . . #
+                # . . . #
                 . # . # .
                 . . # . .
                 . # . # .

@@ -1,8 +1,8 @@
 servos.P2.set_angle(90)
-_continue = False
-while _continue == False:
+continu = False
+while continu == False:
     basic.show_leds("""
-        # . . . #
+                # . . . #
                 . # . # .
                 . . # . .
                 . # . # .
