@@ -1,10 +1,11 @@
 {
-    "name": "save da world",
+    "name": "Save da world",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "servo": "*"
     },
     "files": [
         "main.blocks",
