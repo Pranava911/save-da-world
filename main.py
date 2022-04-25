@@ -26,7 +26,7 @@ def on_forever():
         # turn on light
         # else if bright,
         # turn off light
-        basic.show_number(pins.analog_read_pin(AnalogPin.P0))
+        basic.show_number(pins.analog_read_pin(AnalogPin.P1))
         if pins.analog_read_pin(AnalogPin.P1) < 400:
             servos.P2.set_angle(45)
         elif pins.analog_read_pin(AnalogPin.P1) > 1000:

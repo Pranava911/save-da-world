@@ -28,7 +28,7 @@ basic.forever(function on_forever() {
         //  turn on light
         //  else if bright,
         //  turn off light
-        basic.showNumber(pins.analogReadPin(AnalogPin.P0))
+        basic.showNumber(pins.analogReadPin(AnalogPin.P1))
         if (pins.analogReadPin(AnalogPin.P1) < 400) {
             servos.P2.setAngle(45)
         } else if (pins.analogReadPin(AnalogPin.P1) > 1000) {
