@@ -1,16 +1,16 @@
-let _continue: boolean;
-servos.P2.setAngle(90)
+let _continu = false
 let continu = false
+servos.P2.setAngle(90)
 while (continu == false) {
     basic.showLeds(`
-                # . . . #
+        # . . . #
                 . # . # .
                 . . # . .
                 . # . # .
                 # . . . #
     `)
     if (input.logoIsPressed()) {
-        _continue = true
+        _continu = true
     }
     
 }
@@ -23,7 +23,7 @@ basic.showLeds(`
 `)
 basic.pause(1000)
 basic.forever(function on_forever() {
-    if (_continue == true) {
+    if (continu == true) {
         //  If dim,
         //  turn on light
         //  else if bright,
