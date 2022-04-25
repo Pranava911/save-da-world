@@ -29,12 +29,16 @@ basic.forever(function on_forever() {
         //  else if bright,
         //  turn off light
         basic.showNumber(pins.analogReadPin(AnalogPin.P1))
-        if (pins.analogReadPin(AnalogPin.P1) < 400) {
+        if (pins.analogReadPin(AnalogPin.P1) == 3) {
             servos.P2.setAngle(45)
-        } else if (pins.analogReadPin(AnalogPin.P1) > 1000) {
+        } else if (pins.analogReadPin(AnalogPin.P1) == 2) {
             servos.P2.setAngle(135)
         }
         
     }
+    
+})
+input.onButtonPressed(Button.A, function on_button_pressed_a() {
+    servos.P2.setAngle(90)
     
 })
