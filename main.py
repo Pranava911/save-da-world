@@ -1,4 +1,3 @@
-_continu = False
 continu = False
 servos.P2.set_angle(90)
 while continu == False:

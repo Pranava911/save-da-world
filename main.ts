@@ -1,4 +1,3 @@
-let _continu = false
 let continu = false
 servos.P2.setAngle(90)
 while (continu == false) {
