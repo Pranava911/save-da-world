@@ -30,9 +30,9 @@ basic.forever(function on_forever() {
         //  turn off light
         basic.showNumber(pins.analogReadPin(AnalogPin.P1))
         if (pins.analogReadPin(AnalogPin.P1) == 3) {
-            servos.P2.setAngle(45)
+            servos.P2.setAngle(65)
         } else if (pins.analogReadPin(AnalogPin.P1) == 2) {
-            servos.P2.setAngle(135)
+            servos.P2.setAngle(115)
         }
         
     }

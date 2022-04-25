@@ -28,9 +28,9 @@ def on_forever():
         # turn off light
         basic.show_number(pins.analog_read_pin(AnalogPin.P1))
         if pins.analog_read_pin(AnalogPin.P1) == 3:
-            servos.P2.set_angle(45)
+            servos.P2.set_angle(65)
         elif pins.analog_read_pin(AnalogPin.P1) == 2:
-            servos.P2.set_angle(135)
+            servos.P2.set_angle(115)
 basic.forever(on_forever)
 
 def on_button_pressed_a():
