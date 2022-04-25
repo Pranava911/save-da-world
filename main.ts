@@ -10,7 +10,7 @@ while (continu == false) {
                 # . . . #
     `)
     if (input.logoIsPressed()) {
-        _continu = true
+        continu = true
     }
     
 }

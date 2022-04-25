@@ -10,7 +10,7 @@ while continu == False:
                 # . . . #
     """)
     if input.logo_is_pressed():
-        _continu = True
+        continu = True
 basic.show_leds("""
     . . . . .
         . . . . #
